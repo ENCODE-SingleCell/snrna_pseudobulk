@@ -18,3 +18,12 @@ where include_intron was true for the single nucleus data.
 When running STAR, the output directory name will include the gene mode. So if it was run as a single nucleus experiment the directory name will be GeneFull_Ex50pAS and should have floating point values.
 
 All the parse data was run with GeneFull_Ex50pAS. Definition for the GeneFull_Ex50pAS can be referred to https://github.com/alexdobin/STAR/blob/b1edc1208d91a53bf40ebae8669f71d50b994851/source/parametersDefault#L863
+
+
+## File annotations
+`00_gene_quantification_pseudobulk.R`: the function for gene quantification of pseudobulk.
+
+`01_encode_pseudobulk_tsv.R`: the pipeline codes for getting the barcodes for levels 1, 2, and 3 and pooling the pseudobulks.
+
+`level1-ENCSR998YMP-smooth_muscle_cell.tsv`: an example tsv file for a pseudobulk at level1 for smooth muscle cell.
+
