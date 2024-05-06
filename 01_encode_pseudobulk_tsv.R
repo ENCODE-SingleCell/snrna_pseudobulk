@@ -3,7 +3,7 @@ source('00_gene_quantification_pseudobulk.R')
 ## load ct annotation file and prepare pseudobulk level123
 ## ========================================================
 library(Matrix)
-d = readRDS('/home/whou10/scratch4/whou10/encode4/data/celltype/proc/final.rds')
+d = readRDS('encode4/data/celltype/proc/final.rds')
 d <- d[!is.na(d$rna_dataset), ]
 d$lifestage <-
   ifelse(d$lifestage %in% c('adult', 'child'),
