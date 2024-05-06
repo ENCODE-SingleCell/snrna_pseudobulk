@@ -28,7 +28,7 @@ gene_quantification_pseudobulk <-
       CPM = cpm,
       stringsAsFactors = FALSE
     )
-    colnames(df) = paste0('#', colnames(df))
+    # colnames(df) = paste0('#', colnames(df))
     write.table(
       df,
       file = savefilename,
